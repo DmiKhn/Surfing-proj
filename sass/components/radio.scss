@@ -11,6 +11,10 @@
 
     .radio__visible {
       border-radius: 4px;
+
+      &::before {
+        background: url('../../img/icons/tick.png') center center no-repeat;
+      }
     }
   }
 }
