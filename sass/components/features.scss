@@ -1,0 +1,21 @@
+.features {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+
+  .features__item {
+    display: flex;
+    gap: 12px;
+
+    .icon__img {
+      width: 35px;
+      height: 35px;
+    }
+
+    .feature__text {
+      font-size: 16px;
+      width: 70px;
+    }
+  }
+}
+
