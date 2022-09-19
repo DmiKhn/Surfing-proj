@@ -2,29 +2,27 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
 
-  .menu__list {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    
-    .menu__link {
-      text-decoration: none;
-    }
+.menu__list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
-  }
+.menu__link {
+  text-decoration: none;
+}
 
-  .phone__number {
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+.phone__number {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
 
-    .phone-number__icon-elem {
-      width: 13px;
-      height: 14px;
-      margin-right: 6px;
-    }
-  }
-
+.phone-number__icon-elem {
+  width: 13px;
+  height: 14px;
+  margin-right: 6px;
 }

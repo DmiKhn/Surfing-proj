@@ -1,17 +1,25 @@
 .benefits {
   display: flex;
-  gap: 55px;
+  // gap: 55px;
+}
 
-  .benefits__item {
-    position: relative;
-    flex: 1;
+.benefits__items {
+  
+  flex: 1;
+  padding: 0 3%;
+  position: relative;
 
+  &::before {
+    content: url('../img/icons/dots.png');
+    position: absolute;
+    top: 30px;
+    right: 0;
+    transform: translateX(50%);
+  }
+
+  &:last-child {
     &::before {
-      content: '../../img/icons/dots.png';
-      position: absolute;
-      top: 30px;
-      right: 0;
-      transform: translateX(50%);
+      display: none;
     }
   }
 }

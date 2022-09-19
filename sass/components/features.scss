@@ -2,20 +2,24 @@
   display: flex;
   align-items: center;
   gap: 70px;
+}
 
-  .features__item {
-    display: flex;
-    gap: 12px;
+.features__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 
-    .icon__img {
-      width: 35px;
-      height: 35px;
-    }
+.features__img {
+  width: 35px;
+  height: 35px;
 
-    .feature__text {
-      font-size: 16px;
-      width: 70px;
-    }
+  &--del {
+    height: 25px;
   }
 }
 
+.feature__text {
+  font-size: 16px;
+  width: 70px;
+}

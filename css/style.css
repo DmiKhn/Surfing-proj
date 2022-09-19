@@ -382,21 +382,25 @@ img {
   align-items: center;
   justify-content: space-between;
 }
-.header .menu__list {
+
+.menu__list {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.header .menu__list .menu__link {
+
+.menu__link {
   text-decoration: none;
 }
-.header .phone__number {
+
+.phone__number {
   font-size: 24px;
   display: flex;
   align-items: center;
   text-decoration: none;
 }
-.header .phone__number .phone-number__icon-elem {
+
+.phone-number__icon-elem {
   width: 13px;
   height: 14px;
   margin-right: 6px;
@@ -410,24 +414,28 @@ img {
   min-height: 650px;
   color: white;
 }
-.hero .hero__container {
+
+.hero__container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
   padding: 24px 0 45px;
 }
-.hero .hero__container .hero__title-section {
+
+.hero__title-section {
   width: 46%;
 }
-.hero .hero__container .hero__title-section .hero__main-title {
+
+.hero__main-title {
   font-size: 48px;
   line-height: 1.15;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 17px;
 }
-.hero .hero__container .hero__title-section .hero__title-desc {
+
+.hero__title-desc {
   font-size: 21px;
   margin-bottom: 39px;
 }
@@ -437,15 +445,22 @@ img {
   align-items: center;
   gap: 70px;
 }
-.features .features__item {
+
+.features__item {
   display: flex;
+  align-items: center;
   gap: 12px;
 }
-.features .features__item .icon__img {
+
+.features__img {
   width: 35px;
   height: 35px;
 }
-.features .features__item .feature__text {
+.features__img--del {
+  height: 25px;
+}
+
+.feature__text {
   font-size: 16px;
   width: 70px;
 }
@@ -460,22 +475,22 @@ img {
   text-decoration: none;
   border: none;
 }
-.btn-transparent {
+.btn--transparent {
   background: transparent;
   font-size: 20px;
   font-weight: 400;
   text-transform: initial;
   color: white;
 }
-.btn-transparent:hover {
+.btn--transparent:hover {
   color: #FEDB3F;
 }
-.btn-yellow {
+.btn--yellow {
   background: #FEDB3F;
   color: black;
   border-radius: 50px;
 }
-.btn-yellow:hover {
+.btn--yellow:hover {
   background: white;
 }
 
@@ -486,7 +501,8 @@ img {
   flex-direction: column;
   justify-content: center;
 }
-.section .section__title {
+
+.section__title {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -503,24 +519,29 @@ img {
 
 .benefits {
   display: flex;
-  gap: 55px;
 }
-.benefits .benefits__item {
-  position: relative;
+
+.benefits__items {
   flex: 1;
+  padding: 0 3%;
+  position: relative;
 }
-.benefits .benefits__item::before {
-  content: "../../img/icons/dots.png";
+.benefits__items::before {
+  content: url("../img/icons/dots.png");
   position: absolute;
   top: 30px;
   right: 0;
   transform: translateX(50%);
 }
+.benefits__items:last-child::before {
+  display: none;
+}
 
 .benefit {
   text-align: center;
 }
-.benefit .benefit__img-wrapper {
+
+.benefit__img-wrapper {
   display: inline-block;
   width: 125px;
   height: 125px;
@@ -530,7 +551,8 @@ img {
   overflow: hidden;
   margin-bottom: 20px;
 }
-.benefit .benefit__img-wrapper .benefit__icon {
+
+.benefit__icon {
   position: absolute;
   width: 70px;
   height: 70px;
@@ -538,11 +560,13 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.benefit .benefit__text .benefit__title {
+
+.benefit__title {
   font-weight: bold;
   margin-bottom: 20px;
 }
-.benefit .benefit__text .benefit__desc {
+
+.benefit__desc {
   color: #666666;
 }
 
@@ -551,32 +575,39 @@ img {
   padding: 50px 45px 34px;
   margin-bottom: 15px;
 }
-.reviews__display .reviews__display-inner {
+
+.reviews__display-inner {
   display: flex;
   align-items: center;
 }
-.reviews__display .reviews__display-inner .reviews__avatar {
+
+.reviews__avatar {
   width: 254px;
   height: 260px;
   margin-right: 40px;
 }
-.reviews__display .reviews__display-inner .reviews__avatar .reviews__avatar-img {
+
+.reviews__avatar-img {
   object-fit: cover;
   width: 100%;
 }
-.reviews__display .reviews__display-inner .reviews__content {
+
+.reviews__content {
   flex: 1;
 }
-.reviews__display .reviews__display-inner .reviews__content .reviews__title {
+
+.reviews__title {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 22px;
 }
-.reviews__display .reviews__display-inner .reviews__content .reviews__text {
+
+.reviews__text {
   color: #666666;
   margin-bottom: 26px;
 }
-.reviews__display .reviews__display-inner .reviews__content .reviews__author {
+
+.reviews__author {
   font-weight: bold;
 }
 
@@ -596,7 +627,8 @@ img {
 .interactive-avatar--active {
   border: 6px solid #FEDB3F;
 }
-.interactive-avatar .interactive-avatar__link {
+
+.interactive-avatar__link {
   position: absolute;
   top: 0;
   left: 0;
@@ -604,7 +636,8 @@ img {
   bottom: 0;
   display: block;
 }
-.interactive-avatar .interactive-avatar__link .interactive-avatar__img {
+
+.interactive-avatar__img {
   display: block;
   width: 100%;
   height: 100%;
@@ -614,41 +647,47 @@ img {
 .form {
   display: flex;
 }
-.form .form__col {
+
+.form__col {
   flex: 1;
   margin-right: 20px;
 }
-.form .form__col:last-child {
+.form__col:last-child {
   margin-right: 0;
 }
-.form .form__col .form__controls {
+
+.form__controls {
   display: flex;
   flex-wrap: wrap;
 }
-.form .form__col .form__row {
+
+.form__row {
   display: flex;
   margin-bottom: 18px;
 }
-.form .form__col .form__row .form__block {
+
+.form__block {
   flex: 1;
   margin-right: 20px;
 }
-.form .form__col .form__row .form__block:last-child {
+.form__block:last-child {
   margin-right: 0;
 }
-.form .form__col .form__row .form__block .form__input-textarea {
+
+.form__input-textarea {
   height: 180px;
   width: 450px;
   resize: none;
 }
-.form .form__col .form__row .form__block .form__input {
+
+.form__input {
   width: 100%;
   border: none;
   padding: 18px 11px;
   border: solid 2px transparent;
   border-radius: 6px;
 }
-.form .form__col .form__row .form__block .form__input:focus {
+.form__input:focus {
   border-color: #FEDB3F;
   outline: none;
 }
@@ -673,7 +712,7 @@ img {
   border-radius: 4px;
 }
 .radio--checkbox .radio__visible::before {
-  background: url("../../img/icons/tick.png") center center no-repeat;
+  background: url("../img/icons/tick.png") center center no-repeat;
 }
 
 .radio__elem {
@@ -715,7 +754,7 @@ img {
   margin-bottom: 5px;
 }
 .fixed-menu__item--active .fixed-menu__link {
-  border-color: white;
+  border-color: #F2F5F4;
 }
 
 .fixed-menu__link {
@@ -732,7 +771,7 @@ img {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: white;
+  background: #F2F5F4;
   position: absolute;
   top: 50%;
   left: 50%;
