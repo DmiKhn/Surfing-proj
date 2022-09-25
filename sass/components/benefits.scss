@@ -1,6 +1,9 @@
 .benefits {
   display: flex;
-  // gap: 55px;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .benefits__items {
@@ -12,9 +15,13 @@
   &::before {
     content: url('../img/icons/dots.png');
     position: absolute;
-    top: 30px;
+    top: rem(30px);
     right: 0;
     transform: translateX(50%);
+
+    @include phones {
+      display: none;
+    }
   }
 
   &:last-child {
@@ -22,4 +29,5 @@
       display: none;
     }
   }
+
 }

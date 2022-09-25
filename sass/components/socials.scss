@@ -1,0 +1,12 @@
+.socials {
+  display: flex;
+  column-gap: 14px;
+}
+
+.socials__icon {
+  fill: #B3B3B3;
+
+  &:hover {
+    fill: black;
+  }
+}

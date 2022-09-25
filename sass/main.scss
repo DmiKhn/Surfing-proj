@@ -1,10 +1,13 @@
 @import './settings/normalize.scss';
-@import './settings/vars.scss';
+@import './vars.scss';
 @import './settings/fonts.scss';
 @import './settings/base.scss';
+@import './settings/media.scss';
 
 //components
 @import './components/header.scss';
+@import './components/menu.scss';
+@import './components/hamburger.scss';
 @import './components/hero.scss';
 @import './components/features.scss';
 @import './components/btn.scss';
@@ -17,5 +20,9 @@
 @import './components/form.scss';
 @import './components/order.scss';
 @import './components/radio.scss';
+@import './components/map.scss';
+@import './components/contacts.scss';
+@import './components/footer.scss';
+@import './components/socials.scss';
 @import './components/fixed-menu.scss';
 

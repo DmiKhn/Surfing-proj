@@ -1,16 +1,16 @@
 .btn {
-  font-size: 16px;
+  font-size: rem(16px);
   font-weight: bold;
-  padding: 18px 35px;
+  padding: rem(18px) rem(35px);
   text-transform: uppercase;
-  background-repeat: 100px;
+  background-repeat: rem(100px);
   line-height: 1;
   text-decoration: none;
   border: none;
 
   &--transparent {
     background: transparent;
-    font-size: 20px;
+    font-size: rem(20px);
     font-weight: 400;
     text-transform: initial;
     color: white;
@@ -23,7 +23,7 @@
   &--yellow {
     background: $yellow;
     color: black;
-    border-radius: 50px;
+    border-radius: rem(50px);
 
     &:hover {
       background: white;

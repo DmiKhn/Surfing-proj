@@ -1,3 +1,17 @@
+@import "media";
+
+html {
+  font-size: $baseFontSize;
+
+  @include tablets {
+    font-size: $baseFontSize - 1px;
+  }
+
+  @include phones {
+    font-size: $baseFontSize - 2px;
+  }
+}
+
 html,body {
   height: 100%;
 }
@@ -14,14 +28,19 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: $containerWidth + 20px;
   min-height: 100vh;
   overflow: hidden;
 }
 
 .container {
-  width: $containerWidth;
+  width: 95%;
+  max-width: $containerWidth;
   margin: 0 auto;
+  position: relative;
+
+  @include tablets {
+    width: 100%;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
