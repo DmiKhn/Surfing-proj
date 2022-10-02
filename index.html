@@ -35,7 +35,7 @@
               </span>
               <span class="phone-number__text">88009039090</span>
             </a>
-            <a href="" class="hamburger">
+            <a href="" class="hamburger" id="openFullScreen">
               <span class="hamburger__plank"></span>
               <span class="hamburger__plank"></span>
               <span class="hamburger__plank"></span>
@@ -125,6 +125,105 @@
                 </div>
               </li>
             </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section products-section">
+        <div class="container container-products">
+          <div class="products__wrapper-list">
+            <ul class="products__list">
+              <li class="products__item">
+                <div class="products__preview">
+                  <img src="./img/content/product-1.png" alt="" class="product__img">
+                </div>
+                <div class="products__info">
+                  <div class="products__drop-container">
+                    <div class="products__drop-icon">
+                      <svg width="38" height="38" viewBox="0 0 38 38" class="products__drop-pic">
+                        <use href="./img/icons/sprite.svg#parameter-main"></use>
+                      </svg>
+                      <div class="products__drop-desc">параметры</div>
+                    </div>
+                    <ul class="products__drop-menu">
+                      <li class="products__drop-item">
+                        <div class="products__drop-firstblock">
+                          <svg width="24" height="15" viewBox="0 0 24 15" class="products__drop-proppic">
+                            <use href="./img/icons/sprite.svg#parameter-length"></use>
+                          </svg>
+                          <div class="products__drop-propname">Длина доски</div>
+                        </div>
+                        <div class="products__drop-propdesc">от 2,5 м</div>
+                      </li>
+                      <li class="products__drop-item">
+                        <div class="products__drop-firstblock">
+                          <svg width="18" height="18" viewBox="0 0 18 18" class="products__drop-proppic">
+                            <use href="./img/icons/sprite.svg#parameter-width"></use>
+                          </svg>
+                          <div class="products__drop-propname">Ширина доски</div>
+                        </div>
+                        <div class="products__drop-propdesc">от 40 см</div>
+                      </li>
+                      <li class="products__drop-item">
+                        <div class="products__drop-firstblock">
+                          <svg width="30" height="32" viewBox="4 0 36 36" class="products__drop-proppic">
+                            <use href="./img/icons/sprite.svg#parameter-thicc"></use>
+                          </svg>
+                          <div class="products__drop-propname">Толщина</div>
+                        </div>
+                        <div class="products__drop-propdesc">8 см</div>
+                      </li>
+                      <li class="products__drop-item">
+                        <div class="products__drop-firstblock">
+                          <svg width="18" height="24" viewBox="0 0 18 24" class="products__drop-proppic">
+                            <use href="./img/icons/sprite.svg#parameter-time"></use>
+                          </svg>
+                          <div class="products__drop-propname">Срок службы</div>
+                        </div>
+                        <div class="products__drop-propdesc">5 лет</div>
+                      </li>
+                      <li class="products__drop-item">
+                        <div class="products__drop-firstblock">
+                          <svg width="24" height="24" viewBox="0 0 24 24" class="products__drop-proppic">
+                            <use href="./img/icons/sprite.svg#parameter-weight"></use>
+                          </svg>
+                          <div class="products__drop-propname">Вес</div>
+                        </div>
+                        <div class="products__drop-propdesc">7-8 кг</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <h2 class="products__title">Лонгборд 2.0</h2>
+                  <p class="products__desc">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.
+                  </p>
+                  <ul class="products__feature-list">
+                    <li class="products__feature-item">
+                      <span class="products__feature-title">Длина доски</span>
+                      <span class="products__feature-info">от 2,5 метров</span>
+                    </li>
+                    <li class="products__feature-item">
+                      <span class="products__feature-title">Ширина доски</span>
+                      <span class="products__feature-info">от 40 сантиметров</span>
+                    </li>
+                  </ul>
+                  <div class="products__footer">
+                    <div class="products__price">7000 ₽</div>
+                    <a href="" class="btn btn--yellow">Заказать</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="product__slide-arrows">
+            <div class="product__slide-arrow product__slide-arrow--left">
+              <svg width="15" height="29" viewBox="0 0 15 29" class="arrow__icon">
+                <use href="./img/icons/sprite.svg#arrow-left"></use>
+              </svg>
+            </div>
+            <div class="product__slide-arrow product__slide-arrow--right">
+              <svg width="15" height="29" viewBox="0 0 15 29" class="arrow__icon">
+                <use href="./img/icons/sprite.svg#arrow-right"></use>
+              </svg>
+            </div>
           </div>
         </div>
       </section>
@@ -307,5 +406,25 @@
       <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
     </ul>
   </nav>
+ <div class="fullscreen-menu fullscreen-menu--active">
+    <div class="fullscreen-menu__wrapper">
+      <a href="#" class="fullscreen-menu__close">
+        <svg width="24" height="24" viewBox="0 0 24 24" class="fullscreen-menu__close-icon">
+          <use href="./img/icons/sprite.svg#closeicon-1"></use>
+        </svg>
+      </a>
+      <nav class="menu menu--vertical">
+        <ul class="menu__list menu__list--vertical">
+          <li class="menu__item"><a href="" class="menu__link menu__link--vertical">О нас</a></li>
+          <li class="menu__item"><a href="" class="menu__link menu__link--vertical">Серфборды</a></li>
+          <li class="menu__item"><a href="" class="menu__link menu__link--vertical">Команда</a></li>
+          <li class="menu__item"><a href="" class="menu__link menu__link--vertical">Меню</a></li>
+          <li class="menu__item"><a href="" class="menu__link menu__link--vertical">Отзывы</a></li>
+          <li class="menu__item"><a href="" class="menu__link menu__link--vertical">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <script src="./scripts/menu.js"></script>
 </body>
 </html>

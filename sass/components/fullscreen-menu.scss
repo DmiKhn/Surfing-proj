@@ -1,0 +1,29 @@
+
+.fullscreen-menu {
+  position: absolute;
+  display: none;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #333537;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.fullscreen-menu__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.fullscreen-menu__close {
+  margin: rem(20px);
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.menu--vertical {
+  color: black;
+}

@@ -1,6 +1,7 @@
 .socials {
   display: flex;
-  column-gap: 14px;
+  column-gap: rem(14px);
+  margin-right: rem(16px);
 }
 
 .socials__icon {

@@ -11,6 +11,14 @@
   }
 }
 
+.logo {
+  @include tablets {
+    min-width: rem(40px);
+    min-height: rem(44px);
+  }
+  
+}
+
 .phone__number.header__phone-number {
   @include tablets {
     display: none;

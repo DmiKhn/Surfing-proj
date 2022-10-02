@@ -57,6 +57,14 @@
   border: solid rem(2px) transparent;
   border-radius: rem(6px); 
 
+  @include tablets {
+    padding: rem(11px) rem(11px);
+  }
+
+  @include phones {
+    padding: rem(11px) rem(11px);
+  }
+
   &:focus {
     border-color: $yellow;
     outline: none;
