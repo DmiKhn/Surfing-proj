@@ -461,17 +461,15 @@ img {
   .menu--vertical {
     visibility: visible;
   }
-}
-
-.menu__list--vertical {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1.7777777778rem;
-}
-
-.menu__link--vertical {
-  color: white;
-  font-size: 2rem;
+  .menu--vertical .menu__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.7777777778rem;
+  }
+  .menu--vertical .menu__link {
+    color: white;
+    font-size: 2rem;
+  }
 }
 
 .menu__list {
@@ -747,7 +745,7 @@ img {
   color: #666666;
 }
 
-.products-section {
+.products {
   background: #F8FAF9;
 }
 

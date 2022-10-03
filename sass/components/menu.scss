@@ -9,19 +9,20 @@
 .menu--vertical {
   @include tablets {
     visibility: visible;
+
+    .menu__list {
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(32px);
+    }
+
+    .menu__link {
+      color: white;
+      font-size: rem(36px);
+    }
   }
 }
 
-.menu__list--vertical {
-  display: flex;
-  flex-direction: column;
-  row-gap: rem(32px);
-}
-
-.menu__link--vertical {
-  color: white;
-  font-size: rem(36px);
-}
 
 .menu__list {
   display: flex;
