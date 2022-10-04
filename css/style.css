@@ -453,13 +453,13 @@ img {
 }
 @media screen and (max-width: 768px) {
   .menu {
-    visibility: hidden;
+    display: none;
   }
 }
 
 @media screen and (max-width: 768px) {
   .menu--vertical {
-    visibility: visible;
+    display: contents;
   }
   .menu--vertical .menu__list {
     display: flex;

@@ -2,13 +2,13 @@
   margin: 0 30px;
   padding-top: 5px;
   @include tablets {
-    visibility: hidden;
+    display: none;
   }
 }
 
 .menu--vertical {
   @include tablets {
-    visibility: visible;
+    display: contents;
 
     .menu__list {
       display: flex;
