@@ -1,0 +1,34 @@
+.modal {
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // width: 100%;
+  // height: 100%;
+  // background: rgba(00, 00, 00, .5);
+  // display: flex;
+  // align-items: center;
+  display: none;
+}
+
+.modal__container {
+  background: #fff;
+  padding: rem(35px) rem(60px);
+  width: rem(309px);
+  max-height: rem(176px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__content {
+  margin-bottom: 15px;
+  font-size: rem(16px);
+  color: #000;
+}
+
+.error-modal {
+  .modal__content {
+    color: red;
+  } 
+  
+}

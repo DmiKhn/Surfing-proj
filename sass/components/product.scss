@@ -2,6 +2,14 @@
   background: #F8FAF9;
 }
 
+.products__wrapper-list {
+  .bx-wrapper {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
 .products__item {
   display: flex;
   align-items: center;
