@@ -1130,6 +1130,68 @@ img {
   object-fit: cover;
 }
 
+.hor-slider-section {
+  background: url("../img/content/hor-slider-back.png") center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  min-height: 36.1111111111rem;
+}
+
+.hor-slider__maintitle {
+  position: absolute;
+  font-size: 2.6666666667rem;
+  color: white;
+  margin-top: 4.6666666667rem;
+  margin-left: 2.7777777778rem;
+}
+
+.hor-slider__menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hor-slider__item {
+  display: flex;
+}
+
+.hor-slider__item--active .hor-slider__desc {
+  width: 29.1111111111rem;
+  padding: 1.3888888889rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.hor-slider__link {
+  position: relative;
+  height: 100vh;
+  min-height: 36.1111111111rem;
+}
+
+.hor-slider__img {
+  height: 100vh;
+  min-width: 5.6666666667rem;
+  min-height: 36.1111111111rem;
+}
+
+.hor-slider__desc {
+  display: flex;
+  width: 0;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hor-slider__text {
+  color: white;
+}
+
+.hor-slider__title {
+  position: absolute;
+  bottom: 2.7777777778rem;
+  left: 1.3888888889rem;
+  writing-mode: vertical-rl;
+  transform: scale(-1);
+  color: white;
+}
+
 .form {
   display: flex;
 }
