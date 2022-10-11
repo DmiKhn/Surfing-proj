@@ -43,7 +43,7 @@ $('form').submit(e => {
 
     request.done(data => {
       content.text(data.message);
-
+      $('.form')[0].reset();
       Fancybox.show([{
         src: '#modal',
         type: 'inline'
@@ -65,17 +65,11 @@ $('form').submit(e => {
       }
       
     });
-
-    // request.always(() => {
-    //   Fancybox.show([{
-    //     src: '#modal',
-    //     type: 'inline'
-    //   }]);
-    // });
   }
 });
 
 $('.app-submit-btn').click(e => {
   e.preventDefault();
   Fancybox.close();
+
 });
