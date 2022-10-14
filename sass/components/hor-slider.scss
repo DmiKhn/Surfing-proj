@@ -5,6 +5,12 @@
   min-height: rem(650px);
 }
 
+.hor-slider__wrapper--active {
+  .hor-slider__maintitle {
+    opacity: 0;
+  }
+}
+
 .hor-slider__maintitle {
   position: absolute;
   font-size: rem(48px);
@@ -22,11 +28,14 @@
   display: flex;
 }
 
+.hor-slider__desc {
+  transition: width .5s;
+}
+
 .hor-slider__item--active {
   .hor-slider__desc {
     width: rem(524px);
     padding: rem(25px);
-    transition: all 0.5s ease-in-out;
   }
 }
 

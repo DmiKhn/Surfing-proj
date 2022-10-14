@@ -1158,13 +1158,10 @@ img {
   display: flex;
 }
 
-.hor-slider__desc {
-  transition: width 0.5s;
-}
-
 .hor-slider__item--active .hor-slider__desc {
   width: 29.1111111111rem;
   padding: 1.3888888889rem;
+  transition: all 0.5s ease-in-out;
 }
 
 .hor-slider__link {
@@ -1196,79 +1193,6 @@ img {
   left: 1.3888888889rem;
   writing-mode: vertical-rl;
   transform: scale(-1);
-  color: white;
-}
-
-.player {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  width: 50%;
-  height: 100%;
-}
-
-.player--active {
-  width: 36.6666666667rem;
-  height: 22.4444444444rem;
-}
-
-.player__elem {
-  position: absolute;
-}
-
-.player-section__container {
-  display: flex;
-}
-
-.player__splash {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  cursor: pointer;
-}
-
-.player__controls {
-  display: flex;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  justify-content: space-between;
-  padding: 0.4444444444rem;
-  background: #404040;
-}
-
-.player__playback {
-  position: relative;
-  height: 0.8888888889rem;
-  width: 24.7777777778rem;
-}
-
-.player__playback::before {
-  content: "";
-  height: 0.2222222222rem;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  background: #626262;
-}
-
-.player__playback-button {
-  background: #626262;
-  border-radius: 0.8888888889rem;
-  border: none;
-  width: 0.6666666667rem;
-  height: 0.6666666667rem;
-  padding: 0;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -25%);
-  left: 0;
-}
-
-.player__duration {
   color: white;
 }
 
@@ -1578,4 +1502,4 @@ img {
   color: red;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */
