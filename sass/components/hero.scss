@@ -50,6 +50,7 @@
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: rem(17px);
+  // color: black;
 
   @include phones {
     font-size: rem(32px);

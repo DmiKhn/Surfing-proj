@@ -12,7 +12,7 @@
 <body>
   <div class="wrapper">
     <div class="maincontent">
-      <section class="hero">
+      <section data-sidemenu-theme="white" data-section-id="hero" class="hero">
         <div class="container hero__container">
           <header class="header">
             <svg width="56" height="40" viewBox="0 0 56 40" fill="white" class="logo">
@@ -20,13 +20,13 @@
             </svg>
             <nav class="menu">
               <ul class="menu__list">
-                <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Серфборды</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Команда</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Меню</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Отзывы</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Как мы работаем</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+                <li class="menu__item"><a href="" data-scroll-to="benefits" class="menu__link">О нас</a></li>
+                <li class="menu__item"><a href="" data-scroll-to="products" class="menu__link">Серфборды</a></li>
+                <li class="menu__item"><a href="" data-scroll-to="team" class="menu__link">Команда</a></li>
+                <li class="menu__item"><a href="" data-scroll-to="hor-slider" class="menu__link">Меню</a></li>
+                <li class="menu__item"><a href="" data-scroll-to="reviews" class="menu__link">Отзывы</a></li>
+                <li class="menu__item"><a href="" data-scroll-to="player" class="menu__link">Как мы работаем</a></li>
+                <li class="menu__item"><a href="" data-scroll-to="map" class="menu__link">Контакты</a></li>
               </ul>
             </nav>
             <a href="tel:+78009039090" class="phone__number header__phone-number">
@@ -47,7 +47,7 @@
             <h1 class="hero__main-title">Профессиональные доски для 
               серфинга</h1>
             <div class="hero__title-desc">Самый большой выбор серфбордов в мире</div>
-            <a href="" class="btn btn--yellow">Заказать</a>
+            <a href="" data-scroll-to="order" class="btn btn--yellow">Заказать</a>
           </div>
           <div class="hero__icons-section">
             <ul class="features">
@@ -75,7 +75,7 @@
           </div>
         </div>
       </section>
-      <section class="section benefits-section">
+      <section data-sidemenu-theme="black" data-section-id="benefits" class="section benefits-section">
         <div class="container">
           <div class="headline">
             <h2 class="section__title headline__title">почему Surfboard?</h2>
@@ -130,7 +130,7 @@
           </div>
         </div>
       </section>
-      <section class="section products">
+      <section data-sidemenu-theme="black" data-section-id="products" class="section products">
         <div class="container container-products">
           <div class="products__wrapper-list">
             <ul class="products__list">
@@ -466,7 +466,7 @@
           </div>
         </div>
       </section>
-      <section class="section team-section">
+      <section data-sidemenu-theme="black" data-section-id="team" class="section team-section">
         <div class="container">
           <div class="team__wrapper">
             <h2 class="section__title">Команда</h2>
@@ -591,62 +591,66 @@
           </div>
         </div>
       </section>
-      <section class="section hor-slider-section">
-        <div class="hor-slider__wrapper">
-          <h1 class="hor-slider__maintitle">меню</h1>
-          <ul class="hor-slider__menu">
-            <li class="hor-slider__item">
-              <a href="#" class="hor-slider__link">
-                <img src="./img/content/hor-slider-1.png" alt="" class="hor-slider__img">
-                <h1 class="hor-slider__title">Лонгборды</h1>
-              </a>
-              <div class="hor-slider__desc">
-                <p class="hor-slider__text">
-                  Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.
-                </p>
+      <section data-sidemenu-theme="white" data-section-id="hor-slider" class="section hor-slider-section">
+        <h1 class="hor-slider__maintitle">меню</h1>
+        <ul class="hor-slider__menu">
+          <li class="hor-slider__item">
+            <a href="#" class="hor-slider__link hor-slider__link--first">
+              <!-- <img src="./img/content/hor-slider-1.png" alt="" class="hor-slider__img"> -->
+              <h1 class="hor-slider__title">Лонгборды</h1>
+            </a>
+            <div class="hor-slider__desc">
+              <div class="hor-slider__desc-container">
                 <a href="#" class="hor-slider__close">
-                  <svg width="24" height="24" viewBox="0 0 24 24" class="hor-slider__close-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" class="hor-slider__close-icon">
                     <use href="./img/icons/sprite.svg#closeicon-1"></use>
                   </svg>
                 </a>
-              </div>
-            </li>
-            <li class="hor-slider__item">
-              <a href="#" class="hor-slider__link">
-                <img src="./img/content/hor-slider-2.png" alt="" class="hor-slider__img">
-                <h1 class="hor-slider__title">Шортборды</h1>
-              </a>
-              <div class="hor-slider__desc">
                 <p class="hor-slider__text">
                   Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.
                 </p>
+              </div>
+            </div>
+          </li>
+          <li class="hor-slider__item">
+            <a href="#" class="hor-slider__link hor-slider__link--second">
+              <!-- <img src="./img/content/hor-slider-2.png" alt="" class="hor-slider__img"> -->
+              <h1 class="hor-slider__title">Шортборды</h1>
+            </a>
+            <div class="hor-slider__desc">
+              <div class="hor-slider__desc-container">
                 <a href="#" class="hor-slider__close">
-                  <svg width="24" height="24" viewBox="0 0 24 24" class="hor-slider__close-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" class="hor-slider__close-icon">
                     <use href="./img/icons/sprite.svg#closeicon-1"></use>
                   </svg>
                 </a>
-              </div>
-            </li>
-            <li class="hor-slider__item">
-              <a href="#" class="hor-slider__link">
-                <img src="./img/content/hor-slider-3.png" alt="" class="hor-slider__img">
-                <h1 class="hor-slider__title">Софттопы</h1>
-              </a>
-              <div class="hor-slider__desc">
                 <p class="hor-slider__text">
                   Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.
                 </p>
+              </div>
+            </div>
+          </li>
+          <li class="hor-slider__item">
+            <a href="#" class="hor-slider__link hor-slider__link--third">
+              <!-- <img src="./img/content/hor-slider-3.png" alt="" class="hor-slider__img"> -->
+              <h1 class="hor-slider__title">Софттопы</h1>
+            </a>
+            <div class="hor-slider__desc">
+              <div class="hor-slider__desc-container">
                 <a href="#" class="hor-slider__close">
-                  <svg width="24" height="24" viewBox="0 0 24 24" class="hor-slider__close-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" class="hor-slider__close-icon">
                     <use href="./img/icons/sprite.svg#closeicon-1"></use>
                   </svg>
                 </a>
+                <p class="hor-slider__text">
+                  Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых усилий ехать по ним.
+                </p>
               </div>
-            </li>
-          </ul>
-        </div>
+            </div>
+          </li>
+        </ul>
       </section>
-      <section class="section reviews-section">
+      <section data-sidemenu-theme="black" data-section-id="reviews" class="section reviews-section">
         <div class="container">
           <h2 class="section__title">Отзывы</h2>
           <div class="reviews">
@@ -723,19 +727,26 @@
           </div>
         </div>
       </section>
-      <section class="section player-section">
+      <section data-sidemenu-theme="black" data-section-id="player" class="section player-section">
         <div class="container">
           <h2 class="section__title">как мы работаем</h2>
           <div class="player-section__container">
-            <div class="player player--active">
+            <div class="player">
               <div class="player__wrapper">
                 <div id="vimeo-player" class="player__elem">
                   <iframe src="https://player.vimeo.com/video/94122026?h=4e84e0539a?byline=0&controls=0&muted=1&portrait=0&title=0" width="660" height="404" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="player__splash"></div>
+                <div class="player__splash player__splash--active"></div>
               </div>
               <div class="player__controls">
-                <button class="player__start">play</button>
+                <a href="" class="player__start">
+                  <svg width="14" height="19" viewBox="0 0 12 17" class="player__play-btn">
+                    <use href="./img/icons/sprite.svg#play-b"></use>
+                  </svg>
+                  <svg width="22" height="30" viewBox="0 0 24 27" class="player__pause-btn">
+                    <use href="./img/icons/sprite.svg#pause-b"></use>
+                  </svg>
+                </a>
                 <div class="player__playback">
                   <button class="player__playback-button"></button>
                 </div>
@@ -748,7 +759,7 @@
           </div>
         </div>
       </section>
-      <section class="section order-section">
+      <section data-sidemenu-theme="black" data-section-id="order" class="section order-section">
         <div class="container">
           <h2 class="section__title order-section__title">Закажите доску</h2>
           <form class="form">
@@ -823,69 +834,69 @@
           </form>
         </div>
       </section>
-      <section class="section map-section">
+      <section data-sidemenu-theme="black" data-section-id="map" class="section map-section">
         <div id="map" class="map__pic"></div>
-      </section>
-      <footer class="footer">
-        <div class="container footer__container">
-          <address class="contacts">
-            <div class="contacts__content">
-              <div class="contacts__address">Москва, ул.Новый Арбат, д.31/12</div>
-              <a href="tel:+78009039090" class="phone__number footer__phone-number">
-                <span class="phone-number__icon">
-                  <svg width="24" height="24" viewBox="0 0 12 20" class="phone__icon">
-                    <use href="./img/icons/sprite.svg#phone"></use>
+        <footer class="footer">
+          <div class="container footer__container">
+            <address class="contacts">
+              <div class="contacts__content">
+                <div class="contacts__address">Москва, ул.Новый Арбат, д.31/12</div>
+                <a href="tel:+78009039090" class="phone__number footer__phone-number">
+                  <span class="phone-number__icon">
+                    <svg width="24" height="24" viewBox="0 0 12 20" class="phone__icon">
+                      <use href="./img/icons/sprite.svg#phone"></use>
+                    </svg>
+                  </span>
+                  <span class="phone-number__text">8 800 903 90 90</span>
+                </a>
+              </div>
+            </address>
+            <ul class="socials">
+              <li class="socials__item">
+                <a href="" class="socials__link">
+                  <svg width="20" height="12" viewBox="0 0 20 12" class="socials__icon">
+                    <use href="./img/icons/sprite.svg#vk"></use>
                   </svg>
-                </span>
-                <span class="phone-number__text">8 800 903 90 90</span>
-              </a>
-            </div>
-          </address>
-          <ul class="socials">
-            <li class="socials__item">
-              <a href="" class="socials__link">
-                <svg width="20" height="12" viewBox="0 0 20 12" class="socials__icon">
-                  <use href="./img/icons/sprite.svg#vk"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="" class="socials__link">
-                <svg width="20" height="20" viewBox="0 0 24 24" class="socials__icon">
-                  <use href="./img/icons/sprite.svg#fb"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="" class="socials__link">
-                <svg width="20" height="20" viewBox="0 0 24 24" class="socials__icon">
-                  <use href="./img/icons/sprite.svg#in"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="" class="socials__link">
-                <svg width="20" height="20" viewBox="0 0 24 24" class="socials__icon">
-                  <use href="./img/icons/sprite.svg#tw"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </footer>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="" class="socials__link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" class="socials__icon">
+                    <use href="./img/icons/sprite.svg#fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="" class="socials__link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" class="socials__icon">
+                    <use href="./img/icons/sprite.svg#in"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="" class="socials__link">
+                  <svg width="20" height="20" viewBox="0 0 24 24" class="socials__icon">
+                    <use href="./img/icons/sprite.svg#tw"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </section>
     </div>
   </div>
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">
-      <li class="fixed-menu__item fixed-menu__item--active"><a href="#hero" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="#benef" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="#prod" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="#team" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="#menu" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="#reviews" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="#video" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="#form" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="#map" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item fixed-menu__item--active"><a href="#hero" data-scroll-to="hero" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item"><a href="#benef" data-scroll-to="benefits" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item"><a href="#prod" data-scroll-to="products" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item"><a href="#team" data-scroll-to="team" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item"><a href="#menu" data-scroll-to="hor-slider" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item"><a href="#reviews" data-scroll-to="reviews" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item"><a href="#video" data-scroll-to="player" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item"><a href="#form" data-scroll-to="order" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item"><a href="#map" data-scroll-to="map" class="fixed-menu__link"></a></li>
     </ul>
   </nav>
  <div class="fullscreen-menu fullscreen-menu--active">
@@ -897,12 +908,12 @@
       </a>
       <nav class="menu menu--vertical">
         <ul class="menu__list">
-          <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
-          <li class="menu__item"><a href="" class="menu__link">Серфборды</a></li>
-          <li class="menu__item"><a href="" class="menu__link">Команда</a></li>
-          <li class="menu__item"><a href="" class="menu__link">Меню</a></li>
-          <li class="menu__item"><a href="" class="menu__link">Отзывы</a></li>
-          <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+          <li class="menu__item"><a href="" data-scroll-to="benefits" class="menu__link">О нас</a></li>
+          <li class="menu__item"><a href="" data-scroll-to="products" class="menu__link">Серфборды</a></li>
+          <li class="menu__item"><a href="" data-scroll-to="team" class="menu__link">Команда</a></li>
+          <li class="menu__item"><a href="" data-scroll-to="hor-slider" class="menu__link">Меню</a></li>
+          <li class="menu__item"><a href="" data-scroll-to="reviews" class="menu__link">Отзывы</a></li>
+          <li class="menu__item"><a href="" data-scroll-to="map" class="menu__link">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -920,6 +931,8 @@
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script src="https://player.vimeo.com/api/player.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.7/jquery.touchSwipe.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js"></script>
   <script src="./scripts/fullscreen-menu.js"></script>
   <script src="./scripts/products-slider.js"></script>
   <script src="./scripts/team-accordion.js"></script>
@@ -929,5 +942,6 @@
   <script src="./scripts/player.js"></script>
   <script src="./scripts/one-page-scroll.js"></script>
   <script src="./scripts/map.js"></script>
+  <script src="./scripts/ops.js"></script>
 </body>
 </html>

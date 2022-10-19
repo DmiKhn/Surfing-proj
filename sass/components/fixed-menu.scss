@@ -40,3 +40,21 @@
     transform: translate(-50%, -50%);
   }
 }
+
+.fixed-menu--shadowed {
+  .fixed-menu__item {
+    &--active {
+      .fixed-menu__link {
+        border-color: black;
+        transition: border-color 1s;
+      }
+    }
+  }
+  .fixed-menu__link {
+    &::before {
+      background: black;
+      transition: background 1s;
+    }
+  }
+
+}
