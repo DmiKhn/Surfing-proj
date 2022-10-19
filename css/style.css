@@ -1168,17 +1168,17 @@ img {
 }
 
 .hor-slider__link--first {
-  background: url("../../img/content/hor-slider-1.png");
+  background: url("../img/content/hor-slider-1.png");
   background-size: cover;
 }
 
 .hor-slider__link--second {
-  background: url("../../img/content/hor-slider-2.png");
+  background: url("../img/content/hor-slider-2.png");
   background-size: cover;
 }
 
 .hor-slider__link--third {
-  background: url("../../img/content/hor-slider-3.png");
+  background: url("../img/content/hor-slider-3.png");
   background-size: cover;
 }
 
