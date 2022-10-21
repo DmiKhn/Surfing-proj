@@ -1,0 +1,97 @@
+.reviews__list {
+  position: relative;
+  min-height: rem(280px);
+}
+
+.reviews__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // pointer-events: none;
+  transition: .3s;
+  opacity: 0;
+}
+
+.reviews__item--active {
+  position: static;
+  opacity: 1;
+}
+
+.reviews__display {
+  background: $lightgrey;
+  padding: rem(50px) rem(45px) rem(34px);
+  margin-bottom: rem(15px);
+}
+
+.reviews__display-inner {
+  display: flex;
+  align-items: center;
+
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.reviews__avatar {
+  width: rem(254px);
+  height: rem(260px);
+  margin-right: rem(40px);
+
+  @include tablets {
+    margin-right: 0;
+    width: rem(130px);
+    height: rem(132px);
+  }
+}
+
+.reviews__avatar-img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.reviews__content {
+  flex: 1;
+}
+
+.reviews__title {
+  font-size: rem(30px);
+  font-weight: bold;
+  margin-bottom: rem(22px);
+
+  @include tablets {
+    margin-top: rem(27px);
+    margin-bottom: rem(12px);
+  }
+
+  @include phones {
+    margin-top: rem(27px);
+    margin-bottom: rem(12px);
+  }
+}
+
+.reviews__text {
+  color: $grey;
+  margin-bottom: rem(26px);
+}
+
+.reviews__author {
+  font-weight: bold;
+}
+
+.reviews__switcher {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+

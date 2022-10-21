@@ -1,0 +1,38 @@
+.menu {
+  margin: 0 30px;
+  padding-top: 5px;
+  @include tablets {
+    display: none;
+  }
+}
+
+.menu--vertical {
+  @include tablets {
+    display: contents;
+
+    .menu__list {
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(32px);
+    }
+
+    .menu__link {
+      color: white;
+      font-size: rem(36px);
+    }
+  }
+}
+
+
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: rem(20px);
+}
+
+.menu__link {
+  text-decoration: none;
+  white-space: nowrap;
+}

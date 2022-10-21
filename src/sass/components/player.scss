@@ -1,0 +1,148 @@
+.player {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  // width: 50%;
+  // height: 100%;
+  width: rem(660px);
+  height: rem(404px);
+
+  @include tablets {
+    width: rem(595px);
+    height: rem(350px);
+  }
+
+  @include phones {
+    width: rem(395px);
+    height: rem(235px);
+  }
+}
+
+.player--active {
+  .player__splash {
+    background: none;
+  }
+}
+
+.player__elem {
+  position: absolute;
+  // z-index: 1000;
+}
+
+iframe {
+  @include tablets {
+    width: rem(595px);
+    height: rem(350px);
+  }
+
+  @include phones {
+    width: rem(395px);
+    height: rem(235px);
+  }
+}
+
+.player-section__container {
+  display: flex;
+}
+
+.player__splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  background: url('../../img/content/player.png') center center no-repeat;
+
+}
+
+// .player__start {
+//   background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 17"%3E%3Cpath d="M11.407 9.42903L2.94746 16.1687C2.1387 16.8102 0.948792 16.2338 0.948792 15.2019V1.72252C0.948792 0.690645 2.1387 0.114283 2.94746 0.755718L11.407 7.49543C12.0205 7.98813 12.0205 8.93633 11.407 9.42903Z" fill="white" /%3E%3C/svg%3E');
+// }
+
+.player__play-btn {
+  display: block;
+  position: absolute;
+  bottom: 25%;
+  fill: #626262;
+}
+
+.player__pause-btn {
+  display: none;
+  position: absolute;
+  bottom: 15%;
+  fill: white;
+}
+
+.player__controls {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: rem(8px);
+  background: #404040;
+}
+
+.player__playback {
+  position: relative;
+  height: rem(16px);
+  width: rem(446px);
+
+  @include phones {
+    margin-left: rem(40px);
+    margin-right: rem(25px);
+  }
+}
+
+.player__playback::before {
+  content: '';
+  height: rem(4px);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  background: #626262;
+}
+
+.player__playback-button {
+  background: #626262;
+  border-radius: rem(16px);
+  border: none;
+  width: rem(12px);
+  height: rem(12px);
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -25%);
+  left: 0;
+}
+
+.player__duration {
+  color: #626262;
+}
+
+.player__controls--active {
+  .player__playback-button {
+    background: white;
+  }
+
+  .player__duration {
+    color: white;
+  }
+  
+  .player__play-btn {
+    display: none;
+  }
+
+  .player__pause-btn {
+    display: block;
+  }
+}
+
+// iframe {
+//   width: 100%;
+//   height: 100%;
+// }
+

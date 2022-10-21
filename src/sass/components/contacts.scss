@@ -1,0 +1,30 @@
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  padding: rem(20px) rem(20px);
+
+  @include phones {
+    padding: 0 rem(10px) rem(19px);
+  }
+}
+
+.contacts__content {
+  display: flex;
+  align-items: flex-start;
+  column-gap: rem(10px);
+  flex-direction: column;
+
+  @include phones {
+    align-items: center;
+  }
+}
+
+.contacts__address {
+  font-style: normal;
+  font-size: rem(21px);
+
+  @include phones {
+    font-size: rem(20px);
+  }
+}
+

@@ -1,0 +1,13 @@
+.socials {
+  display: flex;
+  column-gap: rem(14px);
+  margin-right: rem(16px);
+}
+
+.socials__icon {
+  fill: #B3B3B3;
+
+  &:hover {
+    fill: black;
+  }
+}

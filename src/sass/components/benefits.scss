@@ -1,0 +1,33 @@
+.benefits {
+  display: flex;
+
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.benefits__items {
+  
+  flex: 1;
+  padding: 0 3%;
+  position: relative;
+
+  &::before {
+    content: url('../img/icons/dots.png');
+    position: absolute;
+    top: rem(30px);
+    right: 0;
+    transform: translateX(50%);
+
+    @include phones {
+      display: none;
+    }
+  }
+
+  &:last-child {
+    &::before {
+      display: none;
+    }
+  }
+
+}

@@ -1,0 +1,30 @@
+.features {
+  display: flex;
+  align-items: center;
+  gap: rem(70px);
+}
+
+.features {
+  @include tablets {
+    display: none;
+  }
+}
+
+.features__item {
+  display: flex;
+  align-items: center;
+  gap: rem(12px);
+}
+
+.features__img {
+  fill: white;
+
+  &--del {
+    height: rem(25px);
+  }
+}
+
+.feature__text {
+  font-size: rem(16px);
+  width: rem(70px);
+}

@@ -1,0 +1,11 @@
+
+.headline__subtitle {
+  text-align: center;
+  color: $grey;
+  padding: 0 26%;
+  margin-bottom: rem(49px);
+
+  @include phones {
+    padding: 0 5%;
+  }
+}
