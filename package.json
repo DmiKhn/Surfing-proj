@@ -32,5 +32,9 @@
     "gulp-uglify": "^3.0.2",
     "node-sass": "^7.0.3",
     "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "jquery": "^3.6.1",
+    "normalize.css": "^8.0.1"
   }
 }
