@@ -85,4 +85,37 @@
       player.setCurrentTime(result);
     });
   });
+
+  $('.player__volume-playback').click(e => {
+    const volBar = $(e.currentTarget);
+    const clickedVolPosition = e.originalEvent.layerX;
+    const newVolButtonPositionPercent = (clickedVolPosition / volBar.width()) * 100;
+    
+    $('.player__volume-slider').css({
+      left: `${newVolButtonPositionPercent}%` 
+    })
+  
+    const num = 1 / 100 * newVolButtonPositionPercent;
+    player.setVolume(num);
+  });
+  
+  $('.player__volume-btn').click(e => {
+    e.preventDefault();
+  
+    const volumeBlock = $('.player__volume');
+  
+    if (volumeBlock.hasClass('mute')) {
+      volumeBlock.removeClass('mute');
+      player.setVolume(1);
+      $('.player__volume-slider').css({
+        left: '100%' 
+      })
+    } else {
+      volumeBlock.addClass('mute');
+      player.setVolume(0);
+      $('.player__volume-slider').css({
+        left: '0' 
+      })
+    }
+  })
 })
