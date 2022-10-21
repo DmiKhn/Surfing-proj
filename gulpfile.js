@@ -63,7 +63,7 @@ task(
         cascade: false
       })
     ))
-    // .pipe(gulpif(env === 'dev', gcmq()))
+    .pipe(gulpif(env === 'dev', gcmq()))
     .pipe(gulpif(env === 'dev', cleanCSS({compatibility: 'ie8'})))
     .pipe(gulpif(env === 'dev', sourcemaps.write()))
     .pipe(dest(`${DIST_PATH}`))
