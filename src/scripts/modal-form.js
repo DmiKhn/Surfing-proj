@@ -74,6 +74,6 @@
     Fancybox.close();
   
   });  
-})
+})()
 
 

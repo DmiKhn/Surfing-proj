@@ -8,6 +8,6 @@
       curItem.toggleClass('team__item--active').siblings().removeClass('team__item--active');
     });
   });
-})
+})()
 
 

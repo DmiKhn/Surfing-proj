@@ -14,5 +14,5 @@
     productSlider.goToPrevSlide();
   
   });
-})
+})()
 

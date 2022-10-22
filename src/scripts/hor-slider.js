@@ -67,5 +67,5 @@
   
     closeEverything($('.hor-slider__menu'));
   });
-})
+})()
 

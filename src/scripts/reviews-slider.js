@@ -17,4 +17,4 @@
     linkToShow.addClass('reviews__item--active').siblings().removeClass('reviews__item--active');
     currentLink.addClass('interactive-avatar--active').siblings().removeClass('interactive-avatar--active');
   });
-})
+})()

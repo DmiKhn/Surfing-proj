@@ -29,5 +29,5 @@
   }
 
   ymaps.ready(init);
-})
+})()
 

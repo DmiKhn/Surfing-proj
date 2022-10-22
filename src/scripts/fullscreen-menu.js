@@ -12,4 +12,4 @@
     e.preventDefault();
     fullScreenActive.style.display = 'none';
   });
-})
+})()
