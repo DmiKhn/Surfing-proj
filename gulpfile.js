@@ -52,7 +52,12 @@ task(
 
 task( 
   'styles', () => {
-  return src([...STYLES_LIBS, 'src/sass/main.scss'])
+  return src(
+    'node_modules/normalize.css/normalize.css', 
+    'node_modules/bxslider/dist/jquery.bxslider.css',
+    'node_modules/@fancyapps/ui/dist/fancybox.css',
+    'src/sass/main.scss'
+    )
     .pipe(gulpif(env === 'dev', sourcemaps.init()))
     .pipe(concat('main.min.scss'))
     .pipe(sassGlob())
@@ -91,7 +96,13 @@ task(
 // });
 
 task('scripts', () => {
-  return src([...JS_LIBS,'src/scripts/*.js'])
+  return src(
+    'node_modules/jquery/dist/jquery.js',
+    'node_modules/bxslider/dist/jquery.bxslider.js',
+    'node_modules/@fancyapps/ui/dist/fancybox.esm.js',
+    'node_modules/@fancyapps/ui/dist/fancybox.umd.js',
+    'src/scripts/*.js'
+    )
     .pipe(sourcemaps.init())
     .pipe(concat('main.min.js', {newLine: ';'}))
     .pipe(babel({
