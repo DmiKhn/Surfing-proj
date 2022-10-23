@@ -97,7 +97,7 @@ task('scripts', () => {
     .pipe(babel({
       presets: ['@babel/env']
     }))
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(sourcemaps.write())
     .pipe(dest(`${DIST_PATH}`))
     .pipe(reload({stream: true}));
